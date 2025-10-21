@@ -428,13 +428,6 @@ window.APP = APP;
 document.addEventListener("DOMContentLoaded", () => {
   APP.init();
 
-  // Dark mode toggle (works for all pages)
-  document.querySelectorAll("#dark-mode-toggle").forEach((toggleBtn) => {
-    toggleBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-      document.documentElement.classList.toggle("dark-mode");
-    });
-  });
   // Apply dark mode from localStorage
   if (localStorage.getItem("darkMode") === "on") {
     document.body.classList.add("dark-mode");
