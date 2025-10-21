@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LitReads — Books</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">LitReads</a>
+        <nav>
+          <a href="products.html">Books</a>
+          <a href="about.html">About</a>
+          <a href="cart.html" id="cart-link-2"
+            >Cart (<span id="cart-count-2">0</span>)</a
+          >
+          <button id="dark-mode-toggle" class="btn" style="margin-left: 1rem">
+            Toggle Dark Mode
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <section class="controls">
+        <div class="search">
+          <input id="search" placeholder="Search books, authors..." />
+        </div>
+        <div class="filters">
+          <select id="category-filter">
+            <option value="">All Categories</option>
+          </select>
+          <select id="sort">
+            <option value="new">Newest First</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+          </select>
+          <label>
+            Price up to:
+            <input
+              id="price-filter"
+              type="range"
+              min="5"
+              max="500"
+              value="500"
+            />
+            <span id="price-value">500</span>
+          </label>
+        </div>
+      </section>
+
+      <section>
+        <div id="product-grid" class="product-grid"></div>
+        <div id="no-results" class="no-results" hidden>No books found.</div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© LitReads — Group 57</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

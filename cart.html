@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LitReads — Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">LitReads</a>
+        <nav>
+          <a href="products.html">Books</a>
+          <a href="about.html">About</a>
+          <a href="cart.html">Cart</a>
+          <button id="dark-mode-toggle" class="btn" style="margin-left: 1rem">
+            Toggle Dark Mode
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <h2>Your Cart</h2>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <div>Total: <strong id="cart-total">R0.00</strong></div>
+        <div class="cart-actions">
+          <a class="btn" href="products.html">Continue Shopping</a>
+          <a class="btn btn-primary" id="checkout-btn" href="checkout.html"
+            >Checkout</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© LitReads — Group 57</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

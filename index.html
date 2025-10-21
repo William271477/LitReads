@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LitReads — Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">LitReads</a>
+        <nav>
+          <a href="products.html">Books</a>
+          <a href="about.html">About</a>
+          <a href="cart.html" id="cart-link"
+            >Cart (<span id="cart-count">0</span>)</a
+          >
+          <button id="dark-mode-toggle" class="btn" style="margin-left: 1rem">
+            Toggle Dark Mode
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Find your next favourite book</h1>
+            <p>
+              Curated fiction & non-fiction. Classics reimagined. Indie gems.
+            </p>
+            <a class="btn" href="products.html">Browse Books</a>
+          </div>
+          <div class="hero-image">
+            <img src="images/book1.jpg" alt="stack of books" />
+          </div>
+        </div>
+      </section>
+
+      <section class="featured container">
+        <h2>Featured Categories</h2>
+        <div class="categories">
+          <a class="category-card" href="products.html?category=Fiction"
+            >Fiction</a
+          >
+          <a class="category-card" href="products.html?category=Non-fiction"
+            >Non-fiction</a
+          >
+          <a class="category-card" href="products.html?category=Children"
+            >Children</a
+          >
+          <a class="category-card" href="products.html?category=Science"
+            >Science</a
+          >
+        </div>
+      </section>
+
+      <section class="featured-products container">
+        <h2>Featured Books</h2>
+        <div id="home-featured" class="product-grid"></div>
+      </section>
+
+      <section class="newsletter container">
+        <div class="newsletter-card">
+          <h3>Stay in the loop</h3>
+          <p>
+            Sign up for exclusive picks & promotions (fake signup for
+            assignment).
+          </p>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Your email" required />
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© LitReads — Group 57</div>
+        <div>Contact: hello@litreads.com</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

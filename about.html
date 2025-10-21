@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LitReads — About</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">LitReads</a>
+        <nav>
+          <a href="products.html">Books</a>
+          <a href="about.html">About</a>
+          <a href="cart.html">Cart (<span id="cart-count-4">0</span>)</a>
+          <button id="dark-mode-toggle" class="btn" style="margin-left: 1rem">
+            Toggle Dark Mode
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main about-page">
+      <h2>About LitReads</h2>
+      <p>
+        LitReads is a fictional online bookstore created for INF164 Group 57's
+        assignment. We collect beloved reads — from classic novels to modern
+        non-fiction and children's favourites — and present them in a clean,
+        easy-to-use online shop interface.
+      </p>
+
+      <h3>Contact Us</h3>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>Name <input name="name" required /></label>
+        <label>Email <input name="email" type="email" required /></label>
+        <label
+          >Message <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message</button>
+        <div id="contact-confirm" class="contact-confirm" hidden>
+          Thanks! We'll get back to you (simulated).
+        </div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© LitReads — Group 57</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

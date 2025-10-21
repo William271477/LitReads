@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LitReads — Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">LitReads</a>
+        <nav>
+          <a href="products.html">Books</a>
+          <a href="about.html">About</a>
+          <a href="cart.html">Cart</a>
+          <button id="dark-mode-toggle" class="btn" style="margin-left: 1rem">
+            Toggle Dark Mode
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <h2>Checkout</h2>
+      <form id="checkout-form" class="checkout-form" novalidate>
+        <div class="form-row">
+          <label>Name <input name="name" required /></label>
+          <label>Email <input name="email" type="email" required /></label>
+        </div>
+        <div class="form-row">
+          <label>Address <input name="address" required /></label>
+          <label>City <input name="city" required /></label>
+        </div>
+        <div class="form-row">
+          <label>Postal / ZIP <input name="zip" required /></label>
+          <label>Phone <input name="phone" required /></label>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Place order</button>
+        </div>
+        <div id="checkout-confirm" class="checkout-confirm" hidden>
+          <h3>Thank you for your purchase!</h3>
+          <p>
+            Your order has been placed (this is a simulated checkout for the
+            assignment).
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© LitReads — Group 57</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
